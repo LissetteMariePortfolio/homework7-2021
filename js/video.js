@@ -77,6 +77,6 @@ slider.addEventListener('change',function(){
 
 
  });
-  
+  /*Hi*/
 
 
