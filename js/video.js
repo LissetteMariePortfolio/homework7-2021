@@ -1,15 +1,17 @@
 
+
 var video = document.getElementById("player1");
 var muteButton = document.getElementById("mute");
 
 var slider = document.getElementById("slider");
 var body = document.querySelector('body');
-var getVol;
+var getVol = 100;
 var volume = document.getElementById("volume");
+volume.innerText = getVol;
  document.querySelector("#play").addEventListener("click", function() {
  	video.play();
 	console.log("Play Video");
-	volume.innerHTML = slider.innerHTML;
+	volume.innerText = getVol;
  });
  document.querySelector("#pause").addEventListener("click", function() {
 	video.pause();
@@ -76,8 +78,5 @@ slider.addEventListener('change',function(){
 
  });
   
-
-
-
 
 
